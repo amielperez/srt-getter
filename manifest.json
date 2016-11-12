@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "Srt Downloader",
+  "version": "0.1",
+  "minimum_chrome_version": "23",
+  "icons": {
+    "16": "srt-getter-16.png",
+    "128": "srt-getter-128.png"
+  },
+  "permissions": [
+    "<all_urls>","webRequest","webRequestBlocking", "downloads"
+  ],
+  "background": {
+    "scripts": ["index.js"],
+    "persistent": true
+  },
+  "page_action": {
+    "default_icon": "srt-getter-19.png"
+  }
+}
