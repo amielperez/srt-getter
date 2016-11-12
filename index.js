@@ -46,6 +46,7 @@ function downloadSrt(cachedSrtRequest){
 }
 
 function requestIsForSrt(request){
+  // TODO: improve how this is determined, as some url's might not even have srt in their name
   if(/\.srt(\?*)/.test(request.url)){
     return true
   }else {
